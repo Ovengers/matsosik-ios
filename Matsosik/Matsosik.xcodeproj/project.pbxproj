@@ -12,6 +12,8 @@
 		BC0D70952B0D1DA400DB3D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0D70942B0D1DA400DB3D3F /* Assets.xcassets */; };
 		BC0D70982B0D1DA400DB3D3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0D70972B0D1DA400DB3D3F /* Preview Assets.xcassets */; };
 		BC1E0A952B1C9E5E0028D681 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = BC1E0A942B1C9E5E0028D681 /* NMapsMap */; };
+		BC42832F2B37319300426B06 /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42832E2B37319300426B06 /* NaverMapView.swift */; };
+		BC7B4E0C2B2CDB6C00F491CB /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7B4E0B2B2CDB6C00F491CB /* OrderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		BC0D70942B0D1DA400DB3D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC0D70972B0D1DA400DB3D3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC1E0A962B1CA0970028D681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC42832E2B37319300426B06 /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
+		BC7B4E0B2B2CDB6C00F491CB /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				BC0D70902B0D1DA300DB3D3F /* MatsosikApp.swift */,
 				BC0D70922B0D1DA300DB3D3F /* MSMapView.swift */,
+				BC42832E2B37319300426B06 /* NaverMapView.swift */,
+				BC7B4E0B2B2CDB6C00F491CB /* OrderView.swift */,
 				BC1E0A972B1CA0B90028D681 /* Support Files */,
 				BC0D70962B0D1DA400DB3D3F /* Preview Content */,
 			);
@@ -155,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7B4E0C2B2CDB6C00F491CB /* OrderView.swift in Sources */,
 				BC0D70932B0D1DA300DB3D3F /* MSMapView.swift in Sources */,
+				BC42832F2B37319300426B06 /* NaverMapView.swift in Sources */,
 				BC0D70912B0D1DA300DB3D3F /* MatsosikApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +307,7 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Matsosik/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 현재 위치 정보를 받습니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +346,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Matsosik/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 현재 위치 정보를 받습니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -10,22 +10,16 @@ import NMapsMap
 
 struct MSMapView: View {
     var body: some View {
-        ZStack {
+        TabView {
             NaverMapView()
-                .ignoresSafeArea(edges: .all)
+                .ignoresSafeArea(edges: [.top, .horizontal])
+                .tabItem {
+                    Label("지도 뷰", systemImage: "tray.and.arrow.up.fill")
+                }
+            OrderView()
+                .tabItem {
+                    Label("리스트 뷰", systemImage: "list.bullet")
+                }
         }
     }
-}
-
-struct NaverMapView: UIViewRepresentable {
-    func makeUIView(context: Context) -> NMFNaverMapView {
-        let view = NMFNaverMapView()
-        view.showZoomControls = false
-        view.mapView.positionMode = .direction
-        view.mapView.zoomLevel = 17
-
-        return view
-    }
-
-    func updateUIView(_ uiView: UIViewType, context: Context) {}
 }
