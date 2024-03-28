@@ -13,7 +13,7 @@
 		BC0D70982B0D1DA400DB3D3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0D70972B0D1DA400DB3D3F /* Preview Assets.xcassets */; };
 		BC1E0A952B1C9E5E0028D681 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = BC1E0A942B1C9E5E0028D681 /* NMapsMap */; };
 		BC42832F2B37319300426B06 /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42832E2B37319300426B06 /* NaverMapView.swift */; };
-		BCF661DB2B498F9800E8A2F7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF661DA2B498F9800E8A2F7 /* Restaurant.swift */; };
+		BCF661DB2B498F9800E8A2F7 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF661DA2B498F9800E8A2F7 /* Restaurants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		BC0D70972B0D1DA400DB3D3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC1E0A962B1CA0970028D681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC42832E2B37319300426B06 /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
-		BCF661DA2B498F9800E8A2F7 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		BCF661DA2B498F9800E8A2F7 /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +58,9 @@
 		BC0D708F2B0D1DA300DB3D3F /* Matsosik */ = {
 			isa = PBXGroup;
 			children = (
-				BCF661D92B498F8000E8A2F7 /* Model */,
 				BC0D70902B0D1DA300DB3D3F /* MatsosikApp.swift */,
 				BC0D70922B0D1DA300DB3D3F /* MSMapView.swift */,
+				BCF661D92B498F8000E8A2F7 /* Model */,
 				BC42832E2B37319300426B06 /* NaverMapView.swift */,
 				BC1E0A972B1CA0B90028D681 /* Support Files */,
 				BC0D70962B0D1DA400DB3D3F /* Preview Content */,
@@ -88,7 +88,7 @@
 		BCF661D92B498F8000E8A2F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BCF661DA2B498F9800E8A2F7 /* Restaurant.swift */,
+				BCF661DA2B498F9800E8A2F7 /* Restaurants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF661DB2B498F9800E8A2F7 /* Restaurant.swift in Sources */,
+				BCF661DB2B498F9800E8A2F7 /* Restaurants.swift in Sources */,
 				BC0D70932B0D1DA300DB3D3F /* MSMapView.swift in Sources */,
 				BC42832F2B37319300426B06 /* NaverMapView.swift in Sources */,
 				BC0D70912B0D1DA300DB3D3F /* MatsosikApp.swift in Sources */,
