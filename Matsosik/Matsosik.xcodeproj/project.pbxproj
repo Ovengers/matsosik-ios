@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0916A72B924D5F00C19336 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0916A62B924D5F00C19336 /* NetworkManager.swift */; };
 		BC0D70912B0D1DA300DB3D3F /* MatsosikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0D70902B0D1DA300DB3D3F /* MatsosikApp.swift */; };
 		BC0D70932B0D1DA300DB3D3F /* MSMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0D70922B0D1DA300DB3D3F /* MSMapView.swift */; };
 		BC0D70952B0D1DA400DB3D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0D70942B0D1DA400DB3D3F /* Assets.xcassets */; };
 		BC0D70982B0D1DA400DB3D3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0D70972B0D1DA400DB3D3F /* Preview Assets.xcassets */; };
 		BC1E0A952B1C9E5E0028D681 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = BC1E0A942B1C9E5E0028D681 /* NMapsMap */; };
 		BC42832F2B37319300426B06 /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42832E2B37319300426B06 /* NaverMapView.swift */; };
+		BC5DF7E92B944310000CC33F /* URLRequest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DF7E82B944310000CC33F /* URLRequest+.swift */; };
+		BC5DF7EC2B94496B000CC33F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DF7EB2B94496B000CC33F /* HTTPMethod.swift */; };
+		BC5DF7F02B945BAB000CC33F /* URLComponents+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DF7EF2B945BAB000CC33F /* URLComponents+.swift */; };
 		BCF661DB2B498F9800E8A2F7 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF661DA2B498F9800E8A2F7 /* Restaurants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC0916A62B924D5F00C19336 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BC0D708D2B0D1DA300DB3D3F /* Matsosik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matsosik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0D70902B0D1DA300DB3D3F /* MatsosikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatsosikApp.swift; sourceTree = "<group>"; };
 		BC0D70922B0D1DA300DB3D3F /* MSMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMapView.swift; sourceTree = "<group>"; };
@@ -24,6 +29,10 @@
 		BC0D70972B0D1DA400DB3D3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC1E0A962B1CA0970028D681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC42832E2B37319300426B06 /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
+		BC5DF7E82B944310000CC33F /* URLRequest+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+.swift"; sourceTree = "<group>"; };
+		BC5DF7EB2B94496B000CC33F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		BC5DF7EF2B945BAB000CC33F /* URLComponents+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+.swift"; sourceTree = "<group>"; };
+		BCEAE4822B531F8100AF46AB /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = System/Library/Frameworks/Combine.framework; sourceTree = SDKROOT; };
 		BCF661DA2B498F9800E8A2F7 /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +53,7 @@
 			children = (
 				BC0D708F2B0D1DA300DB3D3F /* Matsosik */,
 				BC0D708E2B0D1DA300DB3D3F /* Products */,
+				BCEAE4812B531F8100AF46AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,7 +71,10 @@
 				BC0D70902B0D1DA300DB3D3F /* MatsosikApp.swift */,
 				BC0D70922B0D1DA300DB3D3F /* MSMapView.swift */,
 				BCF661D92B498F8000E8A2F7 /* Model */,
+				BC5DF7EB2B94496B000CC33F /* HTTPMethod.swift */,
+				BC0916A62B924D5F00C19336 /* NetworkManager.swift */,
 				BC42832E2B37319300426B06 /* NaverMapView.swift */,
+				BC5DF7EA2B944322000CC33F /* Extension */,
 				BC1E0A972B1CA0B90028D681 /* Support Files */,
 				BC0D70962B0D1DA400DB3D3F /* Preview Content */,
 			);
@@ -83,6 +96,23 @@
 				BC1E0A962B1CA0970028D681 /* Info.plist */,
 			);
 			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		BC5DF7EA2B944322000CC33F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BC5DF7E82B944310000CC33F /* URLRequest+.swift */,
+				BC5DF7EF2B945BAB000CC33F /* URLComponents+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BCEAE4812B531F8100AF46AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCEAE4822B531F8100AF46AB /* Combine.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BCF661D92B498F8000E8A2F7 /* Model */ = {
@@ -172,6 +202,10 @@
 				BCF661DB2B498F9800E8A2F7 /* Restaurants.swift in Sources */,
 				BC0D70932B0D1DA300DB3D3F /* MSMapView.swift in Sources */,
 				BC42832F2B37319300426B06 /* NaverMapView.swift in Sources */,
+				BC5DF7F02B945BAB000CC33F /* URLComponents+.swift in Sources */,
+				BC5DF7EC2B94496B000CC33F /* HTTPMethod.swift in Sources */,
+				BC0916A72B924D5F00C19336 /* NetworkManager.swift in Sources */,
+				BC5DF7E92B944310000CC33F /* URLRequest+.swift in Sources */,
 				BC0D70912B0D1DA300DB3D3F /* MatsosikApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

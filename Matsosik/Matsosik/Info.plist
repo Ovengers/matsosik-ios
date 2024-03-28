@@ -4,5 +4,10 @@
 <dict>
 	<key>NMFClientId</key>
 	<string>e2691bgvs1</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
