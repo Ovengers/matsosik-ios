@@ -17,6 +17,7 @@
 		BC5DF7E92B944310000CC33F /* URLRequest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DF7E82B944310000CC33F /* URLRequest+.swift */; };
 		BC5DF7EC2B94496B000CC33F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DF7EB2B94496B000CC33F /* HTTPMethod.swift */; };
 		BC5DF7F02B945BAB000CC33F /* URLComponents+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DF7EF2B945BAB000CC33F /* URLComponents+.swift */; };
+		BCEAE4802B53128600AF46AB /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEAE47F2B53128600AF46AB /* RestaurantViewModel.swift */; };
 		BCF661DB2B498F9800E8A2F7 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF661DA2B498F9800E8A2F7 /* Restaurants.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +33,7 @@
 		BC5DF7E82B944310000CC33F /* URLRequest+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+.swift"; sourceTree = "<group>"; };
 		BC5DF7EB2B94496B000CC33F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		BC5DF7EF2B945BAB000CC33F /* URLComponents+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+.swift"; sourceTree = "<group>"; };
-		BCEAE4822B531F8100AF46AB /* Combine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Combine.framework; path = System/Library/Frameworks/Combine.framework; sourceTree = SDKROOT; };
+		BCEAE47F2B53128600AF46AB /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 		BCF661DA2B498F9800E8A2F7 /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +54,6 @@
 			children = (
 				BC0D708F2B0D1DA300DB3D3F /* Matsosik */,
 				BC0D708E2B0D1DA300DB3D3F /* Products */,
-				BCEAE4812B531F8100AF46AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,14 +68,16 @@
 		BC0D708F2B0D1DA300DB3D3F /* Matsosik */ = {
 			isa = PBXGroup;
 			children = (
-				BC0D70902B0D1DA300DB3D3F /* MatsosikApp.swift */,
-				BC0D70922B0D1DA300DB3D3F /* MSMapView.swift */,
-				BCF661D92B498F8000E8A2F7 /* Model */,
-				BC5DF7EB2B94496B000CC33F /* HTTPMethod.swift */,
+				BCBDDD152BB5BFB700DFC686 /* Application */,
+				BCBDDD1C2BB5CC8A00DFC686 /* Common */,
+				BCBDDD192BB5C45100DFC686 /* Presentation */,
+				BCBDDD182BB5C43300DFC686 /* Domain */,
+				BCBDDD172BB5C00900DFC686 /* Data */,
+				BCBDDD1A2BB5C51000DFC686 /* Infrastructure */,
+				BCEAE47F2B53128600AF46AB /* RestaurantViewModel.swift */,
 				BC0916A62B924D5F00C19336 /* NetworkManager.swift */,
 				BC42832E2B37319300426B06 /* NaverMapView.swift */,
-				BC5DF7EA2B944322000CC33F /* Extension */,
-				BC1E0A972B1CA0B90028D681 /* Support Files */,
+				BC1E0A972B1CA0B90028D681 /* Resource */,
 				BC0D70962B0D1DA400DB3D3F /* Preview Content */,
 			);
 			path = Matsosik;
@@ -89,30 +91,93 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		BC1E0A972B1CA0B90028D681 /* Support Files */ = {
+		BC1E0A972B1CA0B90028D681 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				BC0D70942B0D1DA400DB3D3F /* Assets.xcassets */,
 				BC1E0A962B1CA0970028D681 /* Info.plist */,
 			);
-			path = "Support Files";
+			path = Resource;
 			sourceTree = "<group>";
 		};
-		BC5DF7EA2B944322000CC33F /* Extension */ = {
+		BC1F546A2BA586550025CE3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC0D70922B0D1DA300DB3D3F /* MSMapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC5DF7EA2B944322000CC33F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				BC5DF7E82B944310000CC33F /* URLRequest+.swift */,
 				BC5DF7EF2B945BAB000CC33F /* URLComponents+.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		BCEAE4812B531F8100AF46AB /* Frameworks */ = {
+		BCBDDD152BB5BFB700DFC686 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				BCEAE4822B531F8100AF46AB /* Combine.framework */,
+				BC0D70902B0D1DA300DB3D3F /* MatsosikApp.swift */,
 			);
-			name = Frameworks;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BCBDDD162BB5BFF100DFC686 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BCBDDD172BB5C00900DFC686 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BC1F546A2BA586550025CE3B /* View */,
+				BCF661D92B498F8000E8A2F7 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BCBDDD182BB5C43300DFC686 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BCBDDD192BB5C45100DFC686 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BCBDDD1B2BB5CBDC00DFC686 /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BCBDDD1A2BB5C51000DFC686 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				BCBDDD162BB5BFF100DFC686 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		BCBDDD1B2BB5CBDC00DFC686 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC5DF7EA2B944322000CC33F /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BCBDDD1C2BB5CC8A00DFC686 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC5DF7EB2B94496B000CC33F /* HTTPMethod.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		BCF661D92B498F8000E8A2F7 /* Model */ = {
@@ -201,6 +266,7 @@
 			files = (
 				BCF661DB2B498F9800E8A2F7 /* Restaurants.swift in Sources */,
 				BC0D70932B0D1DA300DB3D3F /* MSMapView.swift in Sources */,
+				BCEAE4802B53128600AF46AB /* RestaurantViewModel.swift in Sources */,
 				BC42832F2B37319300426B06 /* NaverMapView.swift in Sources */,
 				BC5DF7F02B945BAB000CC33F /* URLComponents+.swift in Sources */,
 				BC5DF7EC2B94496B000CC33F /* HTTPMethod.swift in Sources */,

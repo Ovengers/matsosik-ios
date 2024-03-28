@@ -16,10 +16,10 @@ struct MSMapView: View {
                 .tabItem {
                     Label("지도 뷰", systemImage: "tray.and.arrow.up.fill")
                 }
-            NaverMapView()
-                .tabItem {
-                    Label("리스트 뷰", systemImage: "list.bullet")
-                }
         }
     }
+}
+
+#Preview {
+    MSMapView()
 }
