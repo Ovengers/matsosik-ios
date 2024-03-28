@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import OSLog
 
 extension URLRequest {
     mutating func setHTTPMethod(_ httpMethod: HTTPMethod) {
@@ -23,7 +24,11 @@ extension URLRequest {
             "WWW-Authenticate"
         ]
 
-        assert(!reservedFields.contains(field))
+        guard !reservedFields.contains(field) else {
+            Logger().warning("\(field) is already reserved.")
+
+            return
+        }
 
         setValue(value, forHTTPHeaderField: field)
     }
