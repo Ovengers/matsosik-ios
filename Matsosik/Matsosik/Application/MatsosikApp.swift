@@ -11,7 +11,7 @@ import SwiftUI
 struct MatsosikApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MSMapView()
         }
     }
 }

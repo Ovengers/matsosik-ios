@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0916A72B924D5F00C19336 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0916A62B924D5F00C19336 /* NetworkManager.swift */; };
 		BC0D70912B0D1DA300DB3D3F /* MatsosikApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0D70902B0D1DA300DB3D3F /* MatsosikApp.swift */; };
-		BC0D70932B0D1DA300DB3D3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0D70922B0D1DA300DB3D3F /* ContentView.swift */; };
+		BC0D70932B0D1DA300DB3D3F /* MSMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0D70922B0D1DA300DB3D3F /* MSMapView.swift */; };
 		BC0D70952B0D1DA400DB3D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0D70942B0D1DA400DB3D3F /* Assets.xcassets */; };
 		BC0D70982B0D1DA400DB3D3F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0D70972B0D1DA400DB3D3F /* Preview Assets.xcassets */; };
+		BC1E0A952B1C9E5E0028D681 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = BC1E0A942B1C9E5E0028D681 /* NMapsMap */; };
+		BC42832F2B37319300426B06 /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC42832E2B37319300426B06 /* NaverMapView.swift */; };
+		BC5DF7E92B944310000CC33F /* URLRequest+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DF7E82B944310000CC33F /* URLRequest+.swift */; };
+		BC5DF7EC2B94496B000CC33F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DF7EB2B94496B000CC33F /* HTTPMethod.swift */; };
+		BC5DF7F02B945BAB000CC33F /* URLComponents+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5DF7EF2B945BAB000CC33F /* URLComponents+.swift */; };
+		BCEAE4802B53128600AF46AB /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEAE47F2B53128600AF46AB /* RestaurantViewModel.swift */; };
+		BCF661DB2B498F9800E8A2F7 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF661DA2B498F9800E8A2F7 /* Restaurants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC0916A62B924D5F00C19336 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BC0D708D2B0D1DA300DB3D3F /* Matsosik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matsosik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0D70902B0D1DA300DB3D3F /* MatsosikApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatsosikApp.swift; sourceTree = "<group>"; };
-		BC0D70922B0D1DA300DB3D3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC0D70922B0D1DA300DB3D3F /* MSMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMapView.swift; sourceTree = "<group>"; };
 		BC0D70942B0D1DA400DB3D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC0D70972B0D1DA400DB3D3F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC1E0A962B1CA0970028D681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC42832E2B37319300426B06 /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
+		BC5DF7E82B944310000CC33F /* URLRequest+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+.swift"; sourceTree = "<group>"; };
+		BC5DF7EB2B94496B000CC33F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		BC5DF7EF2B945BAB000CC33F /* URLComponents+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+.swift"; sourceTree = "<group>"; };
+		BCEAE47F2B53128600AF46AB /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
+		BCF661DA2B498F9800E8A2F7 /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1E0A952B1C9E5E0028D681 /* NMapsMap in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +68,16 @@
 		BC0D708F2B0D1DA300DB3D3F /* Matsosik */ = {
 			isa = PBXGroup;
 			children = (
-				BC0D70902B0D1DA300DB3D3F /* MatsosikApp.swift */,
-				BC0D70922B0D1DA300DB3D3F /* ContentView.swift */,
-				BC0D70942B0D1DA400DB3D3F /* Assets.xcassets */,
+				BCBDDD152BB5BFB700DFC686 /* Application */,
+				BCBDDD1C2BB5CC8A00DFC686 /* Common */,
+				BCBDDD192BB5C45100DFC686 /* Presentation */,
+				BCBDDD182BB5C43300DFC686 /* Domain */,
+				BCBDDD172BB5C00900DFC686 /* Data */,
+				BCBDDD1A2BB5C51000DFC686 /* Infrastructure */,
+				BCEAE47F2B53128600AF46AB /* RestaurantViewModel.swift */,
+				BC0916A62B924D5F00C19336 /* NetworkManager.swift */,
+				BC42832E2B37319300426B06 /* NaverMapView.swift */,
+				BC1E0A972B1CA0B90028D681 /* Resource */,
 				BC0D70962B0D1DA400DB3D3F /* Preview Content */,
 			);
 			path = Matsosik;
@@ -67,6 +91,103 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BC1E0A972B1CA0B90028D681 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BC0D70942B0D1DA400DB3D3F /* Assets.xcassets */,
+				BC1E0A962B1CA0970028D681 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BC1F546A2BA586550025CE3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC0D70922B0D1DA300DB3D3F /* MSMapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC5DF7EA2B944322000CC33F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC5DF7E82B944310000CC33F /* URLRequest+.swift */,
+				BC5DF7EF2B945BAB000CC33F /* URLComponents+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BCBDDD152BB5BFB700DFC686 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BC0D70902B0D1DA300DB3D3F /* MatsosikApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BCBDDD162BB5BFF100DFC686 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BCBDDD172BB5C00900DFC686 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BC1F546A2BA586550025CE3B /* View */,
+				BCF661D92B498F8000E8A2F7 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BCBDDD182BB5C43300DFC686 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BCBDDD192BB5C45100DFC686 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BCBDDD1B2BB5CBDC00DFC686 /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BCBDDD1A2BB5C51000DFC686 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				BCBDDD162BB5BFF100DFC686 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		BCBDDD1B2BB5CBDC00DFC686 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC5DF7EA2B944322000CC33F /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BCBDDD1C2BB5CC8A00DFC686 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BC5DF7EB2B94496B000CC33F /* HTTPMethod.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BCF661D92B498F8000E8A2F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCF661DA2B498F9800E8A2F7 /* Restaurants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -75,7 +196,6 @@
 			buildConfigurationList = BC0D709B2B0D1DA400DB3D3F /* Build configuration list for PBXNativeTarget "Matsosik" */;
 			buildPhases = (
 				BC0D70892B0D1DA300DB3D3F /* Sources */,
-				BC0D709E2B0D1F3700DB3D3F /* ShellScript */,
 				BC0D708A2B0D1DA300DB3D3F /* Frameworks */,
 				BC0D708B2B0D1DA300DB3D3F /* Resources */,
 			);
@@ -84,6 +204,9 @@
 			dependencies = (
 			);
 			name = Matsosik;
+			packageProductDependencies = (
+				BC1E0A942B1C9E5E0028D681 /* NMapsMap */,
+			);
 			productName = Matsosik;
 			productReference = BC0D708D2B0D1DA300DB3D3F /* Matsosik.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +235,9 @@
 				Base,
 			);
 			mainGroup = BC0D70842B0D1DA300DB3D3F;
+			packageReferences = (
+				BC1E0A932B1C9E5E0028D681 /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */,
+			);
 			productRefGroup = BC0D708E2B0D1DA300DB3D3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,33 +259,19 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		BC0D709E2B0D1F3700DB3D3F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		BC0D70892B0D1DA300DB3D3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC0D70932B0D1DA300DB3D3F /* ContentView.swift in Sources */,
+				BCF661DB2B498F9800E8A2F7 /* Restaurants.swift in Sources */,
+				BC0D70932B0D1DA300DB3D3F /* MSMapView.swift in Sources */,
+				BCEAE4802B53128600AF46AB /* RestaurantViewModel.swift in Sources */,
+				BC42832F2B37319300426B06 /* NaverMapView.swift in Sources */,
+				BC5DF7F02B945BAB000CC33F /* URLComponents+.swift in Sources */,
+				BC5DF7EC2B94496B000CC33F /* HTTPMethod.swift in Sources */,
+				BC0916A72B924D5F00C19336 /* NetworkManager.swift in Sources */,
+				BC5DF7E92B944310000CC33F /* URLRequest+.swift in Sources */,
 				BC0D70912B0D1DA300DB3D3F /* MatsosikApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -276,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -289,28 +401,38 @@
 		BC0D709C2B0D1DA400DB3D3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Matsosik/Preview Content\"";
 				DEVELOPMENT_TEAM = 2JBK7N75S7;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Matsosik/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "맛소식";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 현재 위치 정보를 받습니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = nbt.party.o.matsosik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -325,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Matsosik/Preview Content\"";
@@ -332,19 +455,25 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Matsosik/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "맛소식";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "사용자의 현재 위치 정보를 받습니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = nbt.party.o.matsosik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -376,6 +505,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC1E0A932B1C9E5E0028D681 /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stleamist/NMapsMap-SwiftPM";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC1E0A942B1C9E5E0028D681 /* NMapsMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC1E0A932B1C9E5E0028D681 /* XCRemoteSwiftPackageReference "NMapsMap-SwiftPM" */;
+			productName = NMapsMap;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC0D70852B0D1DA300DB3D3F /* Project object */;
 }
